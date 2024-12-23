@@ -1,0 +1,57 @@
+.sub-text-forget
+{
+
+text-decoration-skip-ink: none;
+height: 18px;
+top: 380px;
+left: 80px;
+gap: 0px;
+opacity: 0px;
+width: 100%;
+font-family: Urbanist;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
+}
+ .tab-content-forget {
+    margin-top: 1rem;
+    padding-bottom: 40px;
+  }
+  
+
+.submit-btn-forget {
+    width: 435px;
+    height: 59px;
+    top: 347px;
+    padding: 8px 16px 8px 16px;
+    gap: 4px;
+    border-radius: 22px;
+    opacity: 0px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #016DB7;
+    color: 016DB7;
+    
+      }
+
+    .login-btn
+    {
+        padding-left: 60px;
+        padding-top: 20px;
+    }
+
+    .login-criidentila-forget
+    {
+      padding-top: 150px;
+      padding-left: 60px;
+    }
+    .logo-image-container-forget
+    {
+        padding-top: 20px;
+        padding-left: 40px;
+    }

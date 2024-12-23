@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import PublicRoute from "../src/routes/PublicRouting"
+import Login from "./Components/Login/login";
+import Signup from "./Components/Signup/Signup";
+import Foget from "./Components/Forget/Forget";
+import Reset from "./Components/Reset/reset";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <PublicRoute restricted>
+              <Login />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <PublicRoute restricted>
+              <Signup />
+            </PublicRoute>
+          }
+        />
+                <Route
+          path="/forget"
+          element={
+            <PublicRoute restricted>
+              <Foget />
+            </PublicRoute>
+          }
+        />
+                        <Route
+        path="/reset-password/:uid/:token"
+          element={
+            <PublicRoute restricted>
+              <Reset />
+            </PublicRoute>
+          }
+        />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 

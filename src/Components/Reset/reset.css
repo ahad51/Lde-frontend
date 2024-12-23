@@ -1,0 +1,39 @@
+.sub-text-reset
+{
+text-decoration-skip-ink: none;
+height: 18px;
+top: 380px;
+left: 80px;
+gap: 0px;
+opacity: 0px;
+width: 55%;
+font-family: Urbanist;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.2px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+padding-bottom: 20px;
+
+}
+.reset-password
+    {
+  width: 100%;
+  height: 19px;
+  top: 74px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  
+    }
+    .reset-btn
+    {
+        padding-top: 20px;
+    }
