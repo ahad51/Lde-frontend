@@ -98,12 +98,10 @@ const Signup = () => {
   const renderErrorMessages = () => {
     const allErrors = [];
 
-    // Add global error message
     if (errorMessage) {
       allErrors.push(errorMessage);
     }
 
-    // Add field-specific error messages
     Object.entries(formErrors).forEach(([field, errors]) => {
       const errorText = Array.isArray(errors) ? errors.join(", ") : errors;
       allErrors.push(`${field}: ${errorText}`);
@@ -188,10 +186,8 @@ const Signup = () => {
         required
       />
 
-      {/* Render error messages */}
       {renderErrorMessages()}
 
-      {/* Success message */}
       {successMessage && <p className="success-message">{successMessage}</p>}
 
       <div className="button-submit-signup">
